@@ -1,3 +1,6 @@
+# the function taks a vector of data, a numericaal floor and ceiling and
+# returns a vector with zero for all values in the range and one for all
+# values outside the range
 rangecheck<-function(invar,floor,ceiling){
   
   dirty<-c(rep(0,length(invar)))
@@ -13,6 +16,4 @@ rangecheck<-function(invar,floor,ceiling){
   }
   return(dirty)
 }
-
-# dealing with dirty
 
